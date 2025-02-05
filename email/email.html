@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Portfolio | Home</title>
+        <link
+            rel="shortcut icon"
+            href="../images/logo.png"
+            type="image/x-icon"
+        />
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-logo">
+                <img alt="logo" src="../images/logo.png" />
+            </div>
+
+            <ul class="nav-links">
+                <li class="link"><a href="../index.html">Home</a></li>
+                <li id="link1" class="link">
+                    <a href="../pages/Project/project.html">Project</a>
+                </li>
+                <li id="link2" class="link">
+                    <a href="../pages/Tutorial/tutorial.html">Tutorial</a>
+                </li>
+                <li id="link3" class="link">
+                    <a href="../pages/about.html">About</a>
+                </li>
+            </ul>
+            <a href="#"><button class="btn">Hire me</button></a>
+        </nav>
+        <br />
+        <form id="form">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="field">
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email" required />
+            </div>
+            <div class="field">
+                <label for="from_name">Your Name</label>
+                <input type="text" name="from_name" id="from_name" required />
+            </div>
+            <div class="field">
+                <label for="company_name">Your Company Name</label>
+                <input
+                    type="text"
+                    name="company_name"
+                    id="company_name"
+                    required
+                />
+            </div>
+            <div class="field">
+                <label for="message">Email Body</label>
+                <textarea
+                    type="text"
+                    name="message"
+                    id="message"
+                    required
+                ></textarea>
+            </div>
+            <br />
+            <div class="submit-container">
+                <input type="submit" id="button" value="Send Email" />
+            </div>
+        </form>
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+
+        <script type="text/javascript">
+            emailjs.init("1ianbOQL0Rk5VOHTr");
+        </script>
+        <footer class="container">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="column">
+                <div class="logo">
+                    <img alt="Logo Image" src="../images/logo.png" />
+                </div>
+                <p>I'm seeking a greater sense of purpose and fulfillment.</p>
+                <div class="socials">
+                    <a href="https://www.github.com/mrif449"
+                        ><i class="ri-github-line"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/in/mrif449/"
+                        ><i class="ri-linkedin-line"></i
+                    ></a>
+                    <a href="https://www.instagram.com/fardinology/"
+                        ><i class="ri-instagram-line"></i
+                    ></a>
+                    <a href="https://x.com/mrif449"
+                        ><i class="ri-twitter-line"></i
+                    ></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            Copyright © 2024 Rahadul Islam. <br />
+            All Rights Reserved. <br />
+            <span id="ct"></span>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
